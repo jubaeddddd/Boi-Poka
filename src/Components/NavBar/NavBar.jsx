@@ -1,15 +1,17 @@
+import { NavLink } from "react-router-dom";
+
 
 const NavBar = () => {
 
     const links=<>
-      <li><a href="">Home</a></li>
-      <li><a href="">Listed Books</a></li>
+      <li><NavLink to="/">Home</NavLink></li>
+      <li><NavLink>Listed Books</NavLink></li>
       <li><a href="">Pages to Read</a></li>
     </>
 
 
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar bg-base-100 shadow-sm rounded-b-2xl">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
